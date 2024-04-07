@@ -1,6 +1,7 @@
 # SQL-CHALLENGE
 # Create an image file of your ERD.
 
+```sql
 Departments as d
 -  
 dept_no pk varchar(5) 
@@ -36,10 +37,11 @@ salaries
 -
 emp_no varchar(10) FK >- e.emp_no
 salary int
+```
 
+# Create a .sql file of your table schemata:
 
-# Create a .sql file of your table schemata.
-
+```sql
 -- create titles table
 CREATE TABLE titles (
 	title_id varchar(5) PRIMARY KEY,
@@ -93,10 +95,11 @@ ALTER TABLE departments ALTER COLUMN dept_no SET NOT NULL;
 select column_name, data_type , discription from SCHEMAS
 
 ALTER TABLE departments ALTER COLUMN dept_no SET NOT NULL;
+```
 
+# Create a .sql file of your queries:
 
-# Create a .sql file of your queries.
-
+```sql
 --1.List the employee number, last name, first name, sex, and salary of each employee.
 SELECT e.emp_no as employee_number,e.last_name,e.first_name,e.sex,s.salary
 FROM employees as e
@@ -161,7 +164,7 @@ ORDER BY 2 DESC;
 
 ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
-
+```
 
 
 
