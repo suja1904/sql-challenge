@@ -1,4 +1,5 @@
 # SQL-CHALLENGE
+
 # Create an image file of your ERD.
 
 ```sql
@@ -38,6 +39,8 @@ salaries
 emp_no varchar(10) FK >- e.emp_no
 salary int
 ```
+
+![](Employee_Diagram.png)
 
 # Create a .sql file of your table schemata:
 
